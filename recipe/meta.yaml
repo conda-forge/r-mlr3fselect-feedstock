@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3fselect_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3fselect/mlr3fselect_{{ version }}.tar.gz
-  sha256: b8f2e3e957cfa7a1efaa32eb7ac3b013f12b917675f5ae11df874e1f15c886e3
+  sha256: eee12698816bd43b2f7f122fd882a5e6461c38e62646875b7f697c6541672068
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -55,12 +55,10 @@ test:
 about:
   home: https://mlr3fselect.mlr-org.com, https://github.com/mlr-org/mlr3fselect
   license: LGPL-3.0-only
-  summary: Implements methods for feature selection with 'mlr3', e.g.  random search and sequential
-    selection. Various termination criteria can be set and combined. The class 'AutoFSelector'
-    provides a convenient way to perform nested resampling in combination with 'mlr3'.
+  summary: Implements methods for feature selection with 'mlr3', e.g.  random search and sequential selection. Various termination criteria can be set and combined. The class 'AutoFSelector' provides a convenient way to perform nested resampling in combination with 'mlr3'.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
