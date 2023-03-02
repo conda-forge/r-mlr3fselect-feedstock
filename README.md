@@ -1,11 +1,11 @@
-About r-mlr3fselect
-===================
+About r-mlr3fselect-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3fselect-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mlr3fselect.mlr-org.com, https://github.com/mlr-org/mlr3fselect
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3fselect-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implements methods for feature selection with 'mlr3', e.g.  random search and sequential selection. Various termination criteria can be set and combined. The class 'AutoFSelector' provides a convenient way to perform nested resampling in combination with 'mlr3'.
 
