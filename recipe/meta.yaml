@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3fselect_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3fselect/mlr3fselect_{{ version }}.tar.gz
-  sha256: 7bf4a0001e7243346dcebf8f9a4ca07dfd4bbe4ddc109c32d4ed6ffb5ad9b670
+  sha256: 341a9a6ab2d023d8c6213e97faccbd01d792545ec3086e00d4f7a07f190f87d4
 
 build:
   number: 0
